@@ -52,6 +52,7 @@ header > div {
   top: 10px;
   right: 10px;
   z-index: 5;
+  display: none;
 }
 
 #mobile-mobile .icon {
@@ -109,6 +110,10 @@ footer {
   padding: 0 var(--content-padding);
   margin-top: 20px;
   height: 100px;
+}
+
+footer * {
+  overflow: hidden;
 }
 
 footer a {
