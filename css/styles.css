@@ -110,6 +110,7 @@ footer {
   padding: 0 var(--content-padding);
   margin-top: 20px;
   height: 100px;
+  overflow: hidden !important;
 }
 
 footer * {
@@ -125,6 +126,7 @@ footer > div {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px 0;
 }
 
 footer .social p {
