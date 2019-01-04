@@ -147,7 +147,7 @@ footer .social ul li a {
 }
 
 footer .social ul li a:hover {
-  color: #fff;
+  color: var(--dark-text-color);
 }
 
 footer .copyright p span::before {
