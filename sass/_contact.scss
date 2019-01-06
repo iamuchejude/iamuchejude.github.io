@@ -1,0 +1,24 @@
+[data-content="contact"] {
+  background: rgba(0, 0, 0, 0.04);
+  margin: 40px 0;
+
+  & > div {
+    p {
+      margin: 0 0 10px 0;
+
+      line-height: 1.4rem;
+    }
+
+    a {
+      font-size: 1.1rem;
+      font-weight: lighter;
+    }
+
+    h2 {
+      margin: 10px 0;
+      font-weight: lighter;
+      color: $secondary-color;
+      font-size: 1.3em;
+    }
+  }
+}
