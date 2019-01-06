@@ -1,0 +1,19 @@
+.clear::after {
+  content: ' ';
+  clear: both;
+  display: block;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: $secondary-color;
+}

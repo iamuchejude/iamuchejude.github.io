@@ -11,7 +11,7 @@ document.querySelector('#logo a').addEventListener('click', (e) => {
 document.querySelectorAll('#menu ul li a:not([data-action="external"])').forEach((menu) => {
   menu.addEventListener('click', (e) => {
     e.preventDefault();
-    setActiveContent(e.target.getAttribute('data-show'));
+    // setActiveContent(e.target.getAttribute('data-show'));
   });
 });
 

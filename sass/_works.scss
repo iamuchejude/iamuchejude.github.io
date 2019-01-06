@@ -1,0 +1,86 @@
+[data-content="works"] {
+  margin: 40px 0;
+  min-height: 200px;
+  
+  & > div {
+    height: 100%;
+
+    .title {
+      font-size: .9em;
+      float: left;
+      width: 10px;
+      color: $secondary-color;
+
+      h3 {
+        @include vendorPrefix('transform', rotate(90deg));
+        transform-origin: left top 0;
+        float: left;
+        font-weight: 100;
+        min-width: 120px;
+      }
+    }
+
+    .works {
+      width: calc(100% - 10px);
+      float: left;
+      padding: 0 0 0 10px;
+      
+      * {
+        box-sizing: border-box;
+      }
+
+      .wmore {
+        margin: 30px 0;
+        text-align: center;
+
+        .wmore-btn {
+          border: 1px solid $secondary-color;
+          width: 120px;
+          padding: 10px 24px;
+          background: transparent;
+          color: $secondary-color;
+          font-weight: 600px;
+          cursor: pointer;
+          transition: .3s ease-in-out;
+
+          &:hover {
+            background: $secondary-color;
+            color: $primary-color;
+          }
+        }
+      }
+
+      & > .clear {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: auto auto auto;
+
+
+        .work {
+
+          .wtitle {
+            margin: 0 0 5px 0;
+
+            a {
+              transition: .3s ease-in-out;
+
+              &:hover {
+                border-bottom: 3px solid $secondary-color;
+              }
+            }
+          }
+
+          .wtech {
+            color: #949FD9;
+            font-size: .8em;
+            margin: 5px 0;
+          }
+
+          .wdesc {
+            font-size: .95em;
+          }
+        }
+      }
+    }
+  }
+}
