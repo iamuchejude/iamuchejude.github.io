@@ -202,7 +202,7 @@ header {
   @media only screen and (max-width: 1160px) {
     header {
       padding: 0 60px; } }
-  @media only screen and (max-width: 550px) {
+  @media only screen and (max-width: 600px) {
     header {
       padding: 0 50px; } }
   @media only screen and (max-width: 420px) {
@@ -216,7 +216,11 @@ header {
     header > div #logo img {
       width: 35px; }
     header > div #menu {
-      float: left; }
+      float: left;
+      display: block; }
+      @media only screen and (max-width: 600px) {
+        header > div #menu {
+          display: none; } }
       header > div #menu ul {
         list-style: none; }
         header > div #menu ul li {
@@ -230,6 +234,9 @@ header {
       align-items: center;
       justify-content: center;
       display: none; }
+      @media only screen and (max-width: 600px) {
+        header > div #mobile {
+          display: flex; } }
       header > div #mobile .icon {
         width: 30px;
         cursor: pointer; }
@@ -268,9 +275,9 @@ main {
   @media only screen and (max-width: 1160px) {
     main {
       padding: 0 60px; } }
-  @media only screen and (max-width: 550px) {
+  @media only screen and (max-width: 600px) {
     main {
-      padding: 0 30px; } }
+      padding: 0 40px; } }
   @media only screen and (max-width: 420px) {
     main {
       padding: 0 30px; } }
@@ -282,7 +289,7 @@ footer {
   @media only screen and (max-width: 1160px) {
     footer {
       padding: 0 60px; } }
-  @media only screen and (max-width: 550px) {
+  @media only screen and (max-width: 600px) {
     footer {
       padding: 0 50px; } }
   @media only screen and (max-width: 420px) {

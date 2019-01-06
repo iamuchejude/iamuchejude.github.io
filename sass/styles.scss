@@ -41,7 +41,7 @@ header {
     padding: 0 60px;
   }
 
-  @media only screen and (max-width: 550px) {
+  @media only screen and (max-width: 600px) {
     padding: 0 50px;
   }
 
@@ -64,6 +64,11 @@ header {
 
     #menu {
       float: left;
+      display: block;
+
+      @media only screen and (max-width: 600px) {
+        display: none;
+      }
 
       ul {
         list-style: none;
@@ -85,6 +90,10 @@ header {
       align-items: center;
       justify-content: center;
       display: none;
+
+      @media only screen and (max-width: 600px) {
+        display: flex;
+      }
 
       .icon {
         width: 30px;
@@ -144,8 +153,8 @@ main {
     padding: 0 60px;
   }
 
-  @media only screen and (max-width: 550px) {
-    padding: 0 30px;
+  @media only screen and (max-width: 600px) {
+    padding: 0 40px;
   }
 
   @media only screen and (max-width: 420px) {
@@ -163,7 +172,7 @@ footer {
     padding: 0 60px;
   }
 
-  @media only screen and (max-width: 550px) {
+  @media only screen and (max-width: 600px) {
     padding: 0 50px;
   }
 
