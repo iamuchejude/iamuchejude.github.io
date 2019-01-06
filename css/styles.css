@@ -71,7 +71,8 @@ a {
             font-weight: 900;
             font-size: 1.2rem; }
           [data-content="home"] .intro > div > div.info .e {
-            padding: 5px 0; }
+            padding: 5px 0;
+            line-height: 1.4em; }
             [data-content="home"] .intro > div > div.info .e span {
               color: #FECB73;
               font-weight: 600;
@@ -152,6 +153,7 @@ a {
           font-size: .8em;
           margin: 5px 0; }
         [data-content="works"] > div .works > .clear .work .wdesc {
+          line-height: 1.4em;
           font-size: .95em; }
 
 [data-content="contact"] {
