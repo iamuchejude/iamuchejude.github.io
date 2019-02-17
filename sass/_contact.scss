@@ -1,12 +1,12 @@
 [data-content="contact"] {
   background: rgba(0, 0, 0, 0.04);
-  margin: 40px 0;
+  margin: 30px 0;
+  padding: 20px 0;
 
   & > div {
     p {
       margin: 0 0 10px 0;
-
-      line-height: 1.4rem;
+      line-height: 1.6rem;
     }
 
     a {
@@ -16,7 +16,7 @@
 
     h2 {
       margin: 10px 0;
-      font-weight: lighter;
+      font-weight: bold;
       color: $secondary-color;
       font-size: 1.3em;
     }

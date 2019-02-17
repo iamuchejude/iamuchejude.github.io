@@ -16,10 +16,11 @@
 html {
   font-family: 'IBM Plex Mono', monospace;
   @include vendorPrefix('text-size-adjust', '100%');
+  scroll-behavior: smooth;
 }
 
 body {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: lighter;
   width: 100vw;
   background: $primary-color;
@@ -66,8 +67,33 @@ header {
       float: left;
       display: block;
 
-      @media only screen and (max-width: 600px) {
-        display: none;
+      @media only screen and (max-width: 800px) {
+        transform: translateX(250px);
+        display: block;
+        width: 250px;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: $primary-color;
+        border-left: 1px solid lighten($primary-color, 5%);
+        transition: .5s ease-in-out;
+
+        &.mobile-active {
+          z-index: 3;
+          transform: translateX(0);
+          transition: .5s ease-in-out;
+        }
+
+        ul {
+          margin: 45px 0 20px;
+
+          li {
+            display: block;
+            padding: 12px 5px;
+            margin: 0;
+          }
+        }
       }
 
       ul {
@@ -83,6 +109,23 @@ header {
         }
       }
     }
+    
+    #menu.mobile-active ~ #mobile {
+      position: fixed;
+      top: 40px;
+      right: 40px;
+      z-index: 5;
+      align-items: flex-start;
+      display: flex;
+
+      .icon {
+        width: 30px;
+
+        & > div:nth-child(2) {
+          display: none;
+        }
+      }
+    }
 
     #mobile {
       float: left;
@@ -91,7 +134,7 @@ header {
       justify-content: center;
       display: none;
 
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 800px) {
         display: flex;
       }
 
@@ -149,6 +192,12 @@ main {
   margin-top: $header-height;
   padding: 0 $content-padding;
 
+  [data-content].active {
+    padding: 15px;
+    transition: .5s ease-in-out;
+    background: darken($primary-color, 5%);
+  }
+
   @media only screen and (max-width: 1160px) {
     padding: 0 60px;
   }
@@ -164,7 +213,7 @@ main {
 }
 
 footer {
-  padding: 0 $content-padding;
+  padding: 20px $content-padding;
   margin-top: 20px;
   overflow: hidden;
 
@@ -189,9 +238,6 @@ footer {
   }
 
   & > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 10px 0;
   }
 
@@ -199,18 +245,6 @@ footer {
     p {
       font-size: .9em;
       margin-bottom: 3px;
-
-      span {
-        &::before {
-          content: '<';
-          font-weight: bold;
-        }
-
-        &::after {
-          content: '/>';
-          font-weight: bold;
-        }
-      }
     }
 
     ul {
