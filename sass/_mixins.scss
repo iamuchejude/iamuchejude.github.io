@@ -1,6 +1,0 @@
-@mixin vendorPrefix($property, $value) {
-  #{$property}: $value;
-  -webkit-#{$property}: $value;
-  -moz-#{$property}: $value;
-  -o-#{$property}: $value;
-}
